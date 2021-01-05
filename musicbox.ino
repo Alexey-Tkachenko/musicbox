@@ -11,7 +11,7 @@
 #define DI +1
 #define BE -1
 
-unsigned TEMP = 1867;
+unsigned TEMP;
 
 float freq[] = {261.6, 277.2, 293.7, 311.1, 329.6, 349.2, 370.0, 392.0, 415.3, 440, 466.2, 493.9};
 
@@ -55,6 +55,8 @@ void play(int n, int oct, int dur, int dot = 0)
 
 void Elochka()
 {
+  TEMP = 1867;
+  
   play(SOL, 1, 4);
   play(MI, 1, 8);
   play(MI, 1, 8);
@@ -71,6 +73,8 @@ void Elochka()
 
 void Zaratustra()
 {
+  TEMP = 1867;
+  
   play(DO, 1, 1);
   play(SOL, 1, 1);
   play(DO, 2, 1);
@@ -113,6 +117,8 @@ void Zaratustra()
 
 void Empire()
 {
+  TEMP = 1867;
+  
   play(MI, 1, 4);
   play(MI, 1, 4);
   play(MI, 1, 4);
